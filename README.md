@@ -1,6 +1,6 @@
 # mini_portfolio
 <h1 align="center">
-  💻<br>Portfólio - Iuri Silva
+  💻<br>Mini Portfólio - Cassio Souza
 </h1>
 
 <h4 align="center"><a href="#">Clique para visitar o projeto</a></h4>
@@ -21,19 +21,4 @@ Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 - CSS;
 - JavaScript;
 
----
-
-<h2>🦄 Autor</h2>
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/cassiofreires">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Cassio Souza no GitHub"/><br>
-        <sub>
-          <b>Cassio Souza</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
 </table>
