@@ -1,0 +1,5 @@
+@media (min-width: 360px) and (max-width: 675px){
+    .cartao .abas img{
+        width: 10px;
+    }
+}
