@@ -5,7 +5,7 @@
   💻<br>Mini Portfólio - Cassio Souza
 </h1>
 
-<h4 align="center"><a href="#">Clique para visitar o projeto</a></h4>
+<h4 align="center"><a href="https://cassiofreires.github.io/mini_portfolio/">Clique para visitar o projeto</a></h4>
 
 ## 📚 Seções
 
