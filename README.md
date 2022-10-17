@@ -5,6 +5,10 @@
   💻<br>Mini Portfólio - Cassio Souza
 </h1>
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/80475676/196186933-d0bd81fe-ee66-4b89-b7f2-180ed7c85eb5.png" width="700px"></img>
+</div>
+
 <h4 align="center"><a href="https://cassiofreires.github.io/mini_portfolio/">Clique para visitar o projeto</a></h4>
 
 ## 📚 Seções
