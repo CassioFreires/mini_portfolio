@@ -1,94 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
-    <link rel="stylesheet" href="./src/css/rolagem.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
-    <title>Mini Portfólio</title>
-  </head>
-  <body>
-    <main class="cartao">
-      <div class="minhas-informacoes">
-        <img src="./src/imagens/perfil.jpeg" alt="foto de perfil" />
-        <h1 class="nome">Cassio Souza</h1>
-        <h2 class="cargo">Desenvolvedor Frontend Júnior</h2>
-      </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
-      <div class="conteudo">
-        <ul class="abas">
-          <li class="aba selecionado" id="sobre-mim">
-            <img src="./src/imagens/sobre.gif" alt="ícone de sobre mim" />
-          </li>
-          <li class="aba" id="minhas-redes">
-            <img src="./src/imagens/coracao.gif" alt="ícone de redes sociais" />
-          </li>
-        </ul>
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/estilos.css">
+  <link rel="stylesheet" href="./src/css/rolagem.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+  <title>Mini Portfólio</title>
+</head>
 
-        <div class="informacoes-abas">
-          <div class="informacao selecionado" id="informacao-sobre-mim">
+<body>
+  <main class="cartao">
+    <div class="minhas-informacoes">
+      <img src="./src/imagens/perfil.jpeg" alt="foto de perfil" />
+      <h1 class="nome">Cassio Souza</h1>
+      <h2 class="cargo">Desenvolvedor Frontend Júnior</h2>
+    </div>
+
+    <div class="conteudo">
+      <ul class="abas">
+        <li class="aba selecionado" id="sobre-mim" onclick="exibirPerfil()">
+          <img src="./src/imagens/sobre.gif" alt="ícone de sobre mim" />
+        </li>
+        <li class="aba" id="minhas-redes" onclick="exibirRedes()">
+          <img src="./src/imagens/coracao.gif" alt="ícone de redes sociais" />
+        </li>
+        <li class="aba" id="meus-projetos" onclick="exibirProjetos()">
+          <img src="./src/imagens/proj.gif" alt="ícone de redes sociais" />
+        </li>
+      </ul>
+
+      <div class="informacoes-abas">
+        <div class="informacao" id="informacao-sobre-mim">
+          <div class="descricao">
             <div class="informacao-gif-sobre">
               <img src="./src/imagens/projeto.gif" alt="">
             </div>
             <h3 class="sub-titulo">Sobre</h3>
+            <p>Oi! meu nome é <span>Cassio Souza</span>, seja bem-vindo(a)!</p>
 
-            <div class="descricao">
-              <p>Oi! meu nome é <span>Cassio Souza</span>, seja bem-vindo(a)!</p>
-
-              <p>
-                Sou uma pessoa apaixonada pela programação, tenho 24 anos, curso superior em ANALISE E DESENVOLVIMENTO DE SISTEMAS, 4° Período, 100%EAD, já realizei dois estágios na área de TI porém não foi como programador, meu sonho é trabalhar como dev, possuo conhecimentos em <span>HTML, CSS, Javascript, Bootrastrap, Sass, Tailwind, Git e Github, SQL-SERVER e Redes</span>.
-              </p>
-              <p>
-                Atualmente estudando Javascript e React.
-              </p>
-              <p>
-                E o mais importante gosto muito de café! ksksksksksk.
-              </p>
-              <div class="experiencia"> 
-                  <h3 class="">Experiências</h3>
-                    <ul>
-                      <li><span>Última empresa:</span> Essia.</li>
-                      <li><span>Cargo:</span> Estagiário TI.</li>
-                      <li><span>Descrição:</span> Realizar testes de qualidade, realizar projetos de sequências didáticas em XML, auxiliar na arquitetura de código para desenvolvimento de estruturas de conteúdos didáticos, auxiliar nas demais atividades da área.</li>
-                  </ul>
-                  <ul>
-                      <li><span>Penúltima empresa:</span> EasyCob.</li>
-                      <li><span>Cargo:</span> Estagiário TI.</li>
-                      <li><span>Descrição:</span> Auxiliar na resolução de chamados, prestar suporte aos usuário remotamente, acompanhar as atividades relacionadas ao departamento de informática, auxiliar na parte de infraestrutura, rede, suporte técnico, montagem e manutenção e implementação de software.</li>
-                  </ul>
-              </div>
+            <p>
+              Sou uma pessoa apaixonada pela programação, tenho 24 anos, curso superior em ANALISE E DESENVOLVIMENTO DE
+              SISTEMAS, 4° Período, 100%EAD, já realizei dois estágios na área de TI porém não foi como programador, meu
+              sonho é trabalhar como dev, possuo conhecimentos em <span>HTML, CSS, Javascript, Bootrastrap, Sass,
+                Tailwind, Git e Github, SQL-SERVER e Redes</span>.
+            </p>
+            <p>
+              Atualmente estudando Javascript e React.
+            </p>
+            <p>
+              E o mais importante gosto muito de café! ksksksksksk.
+            </p>
+            <div class="experiencia">
+              <h3 class="">Experiências</h3>
+              <ul>
+                <li><span>Última empresa:</span> Essia.</li>
+                <li><span>Cargo:</span> Estagiário TI.</li>
+                <li><span>Descrição:</span> Realizar testes de qualidade, realizar projetos de sequências didáticas em
+                  XML, auxiliar na arquitetura de código para desenvolvimento de estruturas de conteúdos didáticos,
+                  auxiliar nas demais atividades da área.</li>
+              </ul>
+              <ul>
+                <li><span>Penúltima empresa:</span> EasyCob.</li>
+                <li><span>Cargo:</span> Estagiário TI.</li>
+                <li><span>Descrição:</span> Auxiliar na resolução de chamados, prestar suporte aos usuário remotamente,
+                  acompanhar as atividades relacionadas ao departamento de informática, auxiliar na parte de
+                  infraestrutura, rede, suporte técnico, montagem e manutenção e implementação de software.</li>
+              </ul>
             </div>
           </div>
-          
-
-          <div class="informacao" id="informacao-minhas-redes">
+          <div class="informacao hidden" id="informacao-minhas-redes">
             <h3 class="sub-titulo">Minhas redes</h3>
 
             <ul class="redes-sociais">
-                <li>
-                    <a href="/src/doc/curriculum_novo1.docx" target="_blank" class="curriculo">Currículo</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/cassio-souza-08347a157/" target="_blank" class="linkedin">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://github.com/CassioFreires" target="_blank" class="github">GitHub</a>
-                </li>
+              <li>
+                <a href="/src/doc/CV_atualizado.docx" download="Curriculum" class="curriculo">Currículo</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/cassio-souza-08347a157/" target="_blank"
+                  class="linkedin">LinkedIn</a>
+              </li>
+              <!-- PAREI AQUI LINK PROJETOS -->
+              <li>
+                <a href="https://github.com/CassioFreires" target="_blank" class="github">GitHub</a>
+              </li>
             </ul>
           </div>
-
+          <div class="projetos hidden" id="meus-projetos">
+            <h3>Projetos</h3>
+            <ul class="lista-projetos">
+              <li class="lista-projeto-style"><a href="https://cassiofreires.github.io/Projeto_cadastro_dinamico/"
+                  target="_blank">Tela
+                  de cadastro</a></li>
+              <li class="lista-projeto-style"><a href="https://cassiofreires.github.io/Validacao_cadastro_regeEXP/"
+                  target="_blank">Validação de cadastro com
+                  regeEXP</a></li>
+              <li class="lista-projeto-style"><a href="https://cassiofreires.github.io/Lista-de-tarefas/"
+                  target="_blank">Lista de
+                  tarefas</a></li>
+              <li class="lista-projeto-style"><a href="https://cassiofreires.github.io/Projeto_galeria/"
+                  target="_blank">Galeria de
+                  fotos</a></li>
+              <li class="lista-projeto-style"><a href="https://cassiofreires.github.io/Cronometro/"
+                  target="_blank">Cronômetro</a></li>
+              <li class="lista-projeto-style"><a href="https://cassiofreires.github.io/Spotify-Clone/"
+                  target="_blank">Clone spotify</a>
+              </li>
+              <li class="lista-projeto-style"> <a href="https://cassiofreires.github.io/Web-finans/" target="_blank">Web
+                  finans</a></li>
+              <li class="lista-projeto-style"><a href="https://cassiofreires.github.io/Consumindo_API/"
+                  target="_blank">Drink API</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </main>
 
-    <script src="./src/js/index.js"></script>
-  </body>
+  </main>
+
+  <script src="./src/js/index.js"></script>
+</body>
+
 </html>
